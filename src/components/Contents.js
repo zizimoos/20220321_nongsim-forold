@@ -15,6 +15,11 @@ const Container = styled.div`
     height: 100%;
   }
 `;
+
+const Title = styled.div`
+  font-size: 50px;
+`;
+
 const ItemBox = styled.div`
   width: 100vw;
   height: 100vh;
@@ -40,7 +45,7 @@ const Item = styled.div`
 function Contents(props) {
   return (
     <Container>
-      <h1>INDEX</h1>
+      <Title>INDEX</Title>
       <ItemBox>
         <Item></Item>
         <Item></Item>

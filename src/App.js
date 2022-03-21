@@ -16,6 +16,7 @@ import NewProject3 from "./components/NewProject3";
 import EstimatedIncom1 from "./components/EstimatedIncom1";
 import EstimatedIncom2 from "./components/EstimatedIncom2";
 import HightLight from "./components/HightLight";
+import Logo from "./components/Logo";
 
 const Container = styled.div`
   display: flex;
@@ -29,6 +30,7 @@ const Container = styled.div`
 function App() {
   return (
     <Container>
+      <Logo></Logo>
       <Contents></Contents>
       <History></History>
       <Teams></Teams>
