@@ -13,12 +13,17 @@ import Portfolio6 from "./components/Portfolio6";
 import NewProject1 from "./components/NewProject1";
 import NewProject2 from "./components/NewProject2";
 import NewProject3 from "./components/NewProject3";
+import EstimatedIncom1 from "./components/EstimatedIncom1";
+import EstimatedIncom2 from "./components/EstimatedIncom2";
+import HightLight from "./components/HightLight";
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+  }
 `;
 
 function App() {
@@ -38,6 +43,9 @@ function App() {
       <NewProject1></NewProject1>
       <NewProject2></NewProject2>
       <NewProject3></NewProject3>
+      <EstimatedIncom1></EstimatedIncom1>
+      <EstimatedIncom2></EstimatedIncom2>
+      <HightLight></HightLight>
     </Container>
   );
 }

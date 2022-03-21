@@ -9,11 +9,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: darkgray;
-  @media (max-width: 768px) {
-    width: 100vw;
-    height: 100%;
-  }
+  background-color: bisque;
 `;
 const ItemBox = styled.div`
   width: 100vw;
@@ -22,29 +18,23 @@ const ItemBox = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
 `;
 const Item = styled.div`
-  width: 200px;
-  height: 400px;
+  width: 800px;
+  height: 600px;
   margin: 10px;
   background-color: gray;
 `;
 
-function Technology1(props) {
+function EstimatedIncom2(props) {
   return (
     <Container>
-      <h1>Technology1</h1>
+      <h1>Estimated Incom2</h1>
       <ItemBox>
-        <Item></Item>
-        <Item></Item>
-        <Item></Item>
         <Item></Item>
       </ItemBox>
     </Container>
   );
 }
 
-export default Technology1;
+export default EstimatedIncom2;

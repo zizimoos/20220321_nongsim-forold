@@ -18,6 +18,9 @@ const ItemBox = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 const Item = styled.div`
   width: 200px;

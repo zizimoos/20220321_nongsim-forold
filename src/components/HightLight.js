@@ -9,17 +9,13 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: darkgray;
-  @media (max-width: 768px) {
-    width: 100vw;
-    height: 100%;
-  }
+  background-color: oldlace;
 `;
 const ItemBox = styled.div`
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   @media (max-width: 768px) {
@@ -27,18 +23,20 @@ const ItemBox = styled.div`
   }
 `;
 const Item = styled.div`
-  width: 200px;
-  height: 400px;
+  width: 800px;
+  height: 200px;
   margin: 10px;
   background-color: gray;
+  @media (max-width: 768px) {
+    width: 350px;
+  }
 `;
 
-function Technology1(props) {
+function HightLight(props) {
   return (
     <Container>
-      <h1>Technology1</h1>
+      <h1>HightLight</h1>
       <ItemBox>
-        <Item></Item>
         <Item></Item>
         <Item></Item>
         <Item></Item>
@@ -47,4 +45,4 @@ function Technology1(props) {
   );
 }
 
-export default Technology1;
+export default HightLight;

@@ -10,6 +10,10 @@ const Container = styled.div`
   justify-content: flex-start;
   align-items: center;
   background-color: gainsboro;
+  @media (max-width: 768px) {
+    width: 100vw;
+    height: 100%;
+  }
 `;
 const ItemBox = styled.div`
   width: 100vw;
@@ -18,6 +22,11 @@ const ItemBox = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+    width: 100vw;
+    height: 100%;
+    flex-direction: column;
+  }
 `;
 const Item = styled.div`
   width: 200px;
@@ -25,6 +34,12 @@ const Item = styled.div`
   margin: 30px;
   border-radius: 100px;
   background-color: gray;
+  @media (max-width: 768px) {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    flex-direction: column;
+  }
 `;
 
 function History(props) {

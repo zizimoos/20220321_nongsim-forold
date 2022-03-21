@@ -9,21 +9,28 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: tomato;
+  background-color: seashell;
 `;
 const ItemBox = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 const Item = styled.div`
   width: 400px;
   height: 600px;
   margin: 10px;
   background-color: gray;
+  @media (max-width: 768px) {
+    width: 350px;
+    flex-direction: column;
+  }
 `;
 
 function NewProject3(props) {

@@ -10,14 +10,21 @@ const Container = styled.div`
   justify-content: flex-start;
   align-items: center;
   background-color: silver;
+  @media (max-width: 768px) {
+    width: 100vw;
+    height: 100%;
+  }
 `;
 const ItemBox = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 const Item = styled.div`
   width: 200px;
