@@ -90,30 +90,18 @@ function Teams(props) {
   return (
     <Container>
       <ContextBox>
-        <Title>meet Our Team</Title>
+        <Title>Meet Our Team</Title>
         <ItemBox>
-          <div>
-            <Item1></Item1>
-            <ItemDescription>
-              <div>COO 김성환</div>
-              <ul>
-                <li>한솔 넥스지 신사업개발팀장</li>
-                <li>중앙일보 중앙 M & B 마케팅 팀장</li>
-                <li>영화지 무비위크, 스크린 COO </li>
-                <li>폴란드 바르샤바 대학교 석사 </li>
-              </ul>
-            </ItemDescription>
-          </div>
           <div>
             <Item2></Item2>
             <ItemDescription>
               <div>CTO 남형석</div>
               <ul>
-                <li>LG 계전</li>
+                <li>BORABIT BLOCKCHAIN 거래소</li>
+                <li>EZEN Entertainmet mmorpg 건틀렛</li>
                 <li>NC soft 리니지포에버, 길드워즈</li>
                 <li>NC soft 북경 R & D center head</li>
-                <li>EZEN Entertainmet mmorpg 건틀렛</li>
-                <li>BORABIT BLOCKCHAIN 거래소</li>
+                <li>LG 계전</li>
                 <li>경북대학교 전자공학 학사</li>
               </ul>
             </ItemDescription>
@@ -127,6 +115,18 @@ function Teams(props) {
                 <li>(주) 맥키스컴퍼니 기술연구소장</li>
                 <li>씨앤애드 전시실정</li>
                 <li>홍익대학교 미대 석사</li>
+              </ul>
+            </ItemDescription>
+          </div>
+          <div>
+            <Item1></Item1>
+            <ItemDescription>
+              <div>COO 김성환</div>
+              <ul>
+                <li>한솔 넥스지 신사업개발팀장</li>
+                <li>중앙일보 중앙 M & B 마케팅 팀장</li>
+                <li>영화지 무비위크, 스크린 COO </li>
+                <li>폴란드 바르샤바 대학교 석사 </li>
               </ul>
             </ItemDescription>
           </div>

@@ -46,7 +46,6 @@ const Description = styled.div`
     font-size: 20px;
   }
 `;
-
 const ItemBox = styled.div`
   width: 100%;
   height: 100%;
@@ -94,15 +93,14 @@ function Technology1(props) {
       <ContextBox>
         <Title>Technology 1.</Title>
         <Description>
-          라뜰리에 등 프로젝트를 통해서 AI LEARNING INTERACTIVE, MULTI-CHANNEL
+          라뜰리에 등 프로젝트를 통해서 A.I LEARNING INTERACTIVE, MULTI-CHANNEL
           SYNCRO, HOLOGRAPHIC & CHROMA KEY 등 핵심 TECHNOLOGY를 보유하고
           있습니다.
         </Description>
-
         <ItemBox>
           <Item>
             <ul>
-              <li>AI LEARNING</li>
+              <li>A.I LEARNING</li>
               <li>다채널 동기화 기술</li>
               <li>FOIL TYPE PSEUDO HOLOGRAM</li>
               <li>CHROMAKEY</li>

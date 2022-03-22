@@ -4,12 +4,16 @@ import styled from "styled-components";
 const Container = styled.div`
   width: 100vw;
   height: 100%;
-  padding: 100px;
+  padding: 400px;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   background-color: oldlace;
+`;
+const Title = styled.div`
+  font-size: 80px;
 `;
 const ItemBox = styled.div`
   width: 100vw;
@@ -35,12 +39,7 @@ const Item = styled.div`
 function HightLight(props) {
   return (
     <Container>
-      <h1>HightLight</h1>
-      <ItemBox>
-        <Item></Item>
-        <Item></Item>
-        <Item></Item>
-      </ItemBox>
+      <Title>감사합니다.</Title>
     </Container>
   );
 }

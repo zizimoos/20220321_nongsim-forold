@@ -4,7 +4,6 @@ import History from "./components/History";
 import Teams from "./components/Teams";
 import Technology1 from "./components/Technology1";
 import Portfolio1 from "./components/Portfolio1";
-import Portfolio2 from "./components/Portfolio2";
 import NewProject1 from "./components/NewProject1";
 import HightLight from "./components/HightLight";
 import Logo from "./components/Logo";
@@ -27,7 +26,6 @@ function App() {
       <Teams></Teams>
       <Technology1></Technology1>
       <Portfolio1></Portfolio1>
-      <Portfolio2></Portfolio2>
       <NewProject1></NewProject1>
       <HightLight></HightLight>
     </Container>

@@ -74,15 +74,16 @@ const Item = styled.div`
 function NewProject1(props) {
   return (
     <Container>
-      <Title>NewProject 1.</Title>
-      <Description>
-        ㈜메타스텝은 가톨릭 평화방송과 공동사업으로 메타버스 더 바이블
-        프로젝트를 진행중입니다. 라틀리에(L’atelier) 프로젝트 성공을 기반으로
-        하여, 전세계적인 베스트셀러인 ‘성경＇을 모티브로 홀로그램, AI
-        Interactive 기술 등 첨단 IT 기술을 접목하여 오프라인 공간에서 메타버스
-        체험을 통해 감동을 선사할 예정입니다.
-      </Description>
       <ContextBox>
+        <Title>NewProject 1.</Title>
+        <Description>
+          ㈜메타스텝은 가톨릭 평화방송과 공동사업으로 메타버스 더 바이블
+          프로젝트를 진행중입니다. 라뜰리에(L’atelier) 프로젝트 성공을 기반으로
+          하여, 전세계적인 베스트셀러인 ‘성경＇을 모티브로 홀로그램, A.I
+          Interactive 기술 등 첨단 IT 기술을 접목하여 오프라인 공간에서 메타버스
+          체험을 통해 감동을 선사할 예정입니다.
+        </Description>
+
         <ItemBox>
           <Item>
             <div style={{ fontSize: "25px" }}>메타버스 '더 바이블'</div>

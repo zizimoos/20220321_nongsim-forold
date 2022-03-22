@@ -113,7 +113,8 @@ function Contents(props) {
           <Item>
             <ul>
               <li>NFT 자체 IP 보유</li>
-              <li>자체 보유 IP 활용 NFT 거래 사이트</li>
+              <li>자체 보유 IP 활용</li>
+              <li>NFT 거래 사이트</li>
               <li>테마마크 콘텐츠 MINTING</li>
             </ul>
             <img src={nft} alt="nft" width="100%" />
@@ -121,7 +122,8 @@ function Contents(props) {
           <Item>
             <ul>
               <li>콘텐츠 기획력</li>
-              <li>아라온라인, 마법삼국지, 테디베어, 라뜨리에</li>
+              <li>아라온라인, 마법삼국지</li>
+              <li>테디베어, 라뜰리에</li>
               <li>게임 및 테마파크 콘텐츠 기획력 보유</li>
             </ul>
             <img src={latelier} alt="latelier" width="100%" />
