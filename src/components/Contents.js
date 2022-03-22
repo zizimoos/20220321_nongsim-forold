@@ -33,7 +33,7 @@ const ContextBox = styled.div`
   }
 `;
 const Title = styled.div`
-  font-size: 50px;
+  font-size: 80px;
 `;
 const Description = styled.div`
   margin-top: 30px;
@@ -45,7 +45,6 @@ const Description = styled.div`
     font-size: 20px;
   }
 `;
-
 const ItemBox = styled.div`
   width: 900px;
   height: 100%;
@@ -94,19 +93,18 @@ function Contents(props) {
           <Item>
             <ul>
               <li>게임개발 & 운영 노하우</li>
-              <li>게임엔진개발 / 플랫폼구축</li>
+              <li>게임엔진개발</li>
+              <li>게임 플랫폼구축</li>
               <li>퍼블리싱 / 운영</li>
-              <br></br>
-              <br></br>
             </ul>
             <img src={araImage} alt="ara" width="100%" />
           </Item>
           <Item>
             <ul>
               <li>블록체인 & 암호화폐</li>
-              <li>암호화폐거래소 개발 운영</li>
-              <li>메타버스플랫폼 토큰 발행 운영</li>
-              <br></br>
+              <li>암호화폐거래소 개발</li>
+              <li>WEB3 플랫폼</li>
+              <li>토큰 발행 운영</li>
             </ul>
             <img src={blockchain} alt="blockchain" width="100%" />
           </Item>
@@ -115,7 +113,7 @@ function Contents(props) {
               <li>NFT 자체 IP 보유</li>
               <li>자체 보유 IP 활용</li>
               <li>NFT 거래 사이트</li>
-              <li>테마마크 콘텐츠 MINTING</li>
+              <li>테마마크 콘텐츠</li>
             </ul>
             <img src={nft} alt="nft" width="100%" />
           </Item>
@@ -124,7 +122,7 @@ function Contents(props) {
               <li>콘텐츠 기획력</li>
               <li>아라온라인, 마법삼국지</li>
               <li>테디베어, 라뜰리에</li>
-              <li>게임 및 테마파크 콘텐츠 기획력 보유</li>
+              <li>게임 및 테마파크 콘텐츠</li>
             </ul>
             <img src={latelier} alt="latelier" width="100%" />
           </Item>

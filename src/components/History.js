@@ -48,7 +48,6 @@ const Description = styled.div`
     font-size: 20px;
   }
 `;
-
 const ItemBox = styled.div`
   width: 90%;
   height: 100%;
@@ -68,6 +67,7 @@ const Item1 = styled.div`
   height: 200px;
   margin: 10px;
   border-radius: 100px;
+  border: 2px solid LightSlateGray;
   background-color: gray;
   background-image: url(${oldProject});
   @media (max-width: 768px) {
@@ -82,10 +82,10 @@ const Item2 = styled.div`
   height: 200px;
   margin: 10px;
   border-radius: 100px;
+  border: 2px solid LightSlateGray;
   background-color: gray;
   background-image: url(${zoom});
   background-size: cover;
-  border: solid 2px lightgray;
   @media (max-width: 768px) {
     width: 150px;
     height: 150px;
@@ -99,9 +99,9 @@ const Item3 = styled.div`
   margin: 10px;
   border-radius: 100px;
   background-color: gray;
+  border: 2px solid LightSlateGray;
   background-image: url(${latelier});
   background-size: cover;
-  border: solid 2px lightgray;
   @media (max-width: 768px) {
     width: 150px;
     height: 150px;
@@ -114,10 +114,10 @@ const Item4 = styled.div`
   height: 200px;
   margin: 10px;
   border-radius: 100px;
+  border: 2px solid LightSlateGray;
   background-color: gray;
   background-image: url(${bible});
   background-size: cover;
-  border: solid 2px lightgray;
   @media (max-width: 768px) {
     width: 150px;
     height: 150px;
@@ -127,7 +127,7 @@ const Item4 = styled.div`
 `;
 const Bar = styled.div`
   width: 90%;
-  height: 3px;
+  height: 1px;
   margin-top: -150px;
   margin-bottom: 30px;
   background-color: gray;
@@ -169,8 +169,8 @@ const Spot3 = styled.div`
   z-index: 1;
 `;
 const VerticalBar = styled.div`
-  width: 2px;
-  height: 40px;
+  width: 1px;
+  height: 47px;
   position: relative;
   top: 8px;
   left: 3px;
@@ -192,6 +192,9 @@ const HistoryDescriptionItem = styled.div`
   width: 250px;
   height: 300px;
   margin-bottom: 50px;
+  padding-right: 20px;
+  border: 2px dashed LightSlateGray;
+  border-radius: 10px;
 `;
 const HistoryDescriptionItemUl = styled.ul``;
 const HistoryDescriptionItemLi = styled.li`
@@ -207,7 +210,6 @@ function History(props) {
           1994년 IT기업으로서 시작하여 IT 기술력과 멀티미디어 사업 역량을 갖춘
           회사로 성장하여 왔으며 메타버스 사업을 본격적으로 추진하고 있습니다.
         </Description>
-
         <ItemBox>
           <Item1></Item1>
           <Item2></Item2>
@@ -231,19 +233,28 @@ function History(props) {
               <HistoryDescriptionItemLi>
                 1994 : 법인 설립
               </HistoryDescriptionItemLi>
+              <br></br>
+              <div>주요 사업</div>
+              <br></br>
               <HistoryDescriptionItemLi>
-                1995 : 한국전자통신연구원 [한국어 음성합성 기술]
+                SYSTEM MANAGEMENT
               </HistoryDescriptionItemLi>
               <HistoryDescriptionItemLi>
-                1996 : 대한상공회의소 인트라넷 구축
+                SYSTEM INTEGRATON
               </HistoryDescriptionItemLi>
               <HistoryDescriptionItemLi>
-                1997 : 한국전자통신 연구원 [3차원을 이용한 가상대학]
+                NETWORK MANAGEMENT
+              </HistoryDescriptionItemLi>
+              <HistoryDescriptionItemLi>
+                WIRELESS DATA COMM
               </HistoryDescriptionItemLi>
             </HistoryDescriptionItemUl>
           </HistoryDescriptionItem>
           <HistoryDescriptionItem>
             <ul>
+              <HistoryDescriptionItemLi>
+                2001 : MULTI MEDIA 사업 런칭
+              </HistoryDescriptionItemLi>
               <HistoryDescriptionItemLi>
                 2001 : 미국 CES 참가 [세계최초 CHARACTOLOGY 서비스]
               </HistoryDescriptionItemLi>
@@ -251,35 +262,24 @@ function History(props) {
                 2002 : 멀티미디어 사업부 신설
               </HistoryDescriptionItemLi>
               <HistoryDescriptionItemLi>
-                2003 : 'X-File 안중근 전 (울산전쟁기념관)
-              </HistoryDescriptionItemLi>
-              <HistoryDescriptionItemLi>
                 2004 : 최초 만화일간지(데일리줌) 창간
-              </HistoryDescriptionItemLi>
-              <HistoryDescriptionItemLi>
-                2008 : 살아있는 미술관 (잠실종합운동장)
               </HistoryDescriptionItemLi>
             </ul>
           </HistoryDescriptionItem>
           <HistoryDescriptionItem>
             <ul>
               <HistoryDescriptionItemLi>
-                2017 : 라뜰리에(L'ATELIER)전시회 총괄 기획
+                2021 : 메타버스 법인 설립
+              </HistoryDescriptionItemLi>
+              <HistoryDescriptionItemLi>(주) 앱랩 M&A</HistoryDescriptionItemLi>
+              <br></br>
+              <div>주요 사업</div>
+              <br></br>
+              <HistoryDescriptionItemLi>
+                메타버스 더 바이블 프로젝트
               </HistoryDescriptionItemLi>
               <HistoryDescriptionItemLi>
-                2019 : 라뜰리에 베이징 (L'ATELIER BEIJING WF CENTRAL)
-              </HistoryDescriptionItemLi>
-              <HistoryDescriptionItemLi>
-                2020 : 중국 중한 산업원 MOU (인터렉티브 스포츠 파크)
-              </HistoryDescriptionItemLi>
-              <HistoryDescriptionItemLi>
-                2021 : 메타버스 사업 법인 설립 주)메타스텝
-              </HistoryDescriptionItemLi>
-              <HistoryDescriptionItemLi>
-                2022 : 메타스텝 더 바이블 프로젝트
-              </HistoryDescriptionItemLi>
-              <HistoryDescriptionItemLi>
-                2022 : 메타스텝 가상오피스 플랫폼 구축
+                메타스텝 가상오피스 플랠폼 구축
               </HistoryDescriptionItemLi>
             </ul>
           </HistoryDescriptionItem>
