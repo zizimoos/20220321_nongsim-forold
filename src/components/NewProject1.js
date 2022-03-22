@@ -6,13 +6,26 @@ import emersive from "../assets/emersiveShot.png";
 
 const Container = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   padding: 100px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   background-color: seashell;
+`;
+const ContextBox = styled.div`
+  width: 1000px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    width: 100vw;
+    height: 100%;
+  }
 `;
 const Title = styled.div`
   font-size: 80px;
@@ -24,7 +37,7 @@ const Title = styled.div`
 const Description = styled.div`
   margin-top: 30px;
   font-size: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   @media (max-width: 768px) {
     margin-top: 10px;
     width: 80vw;
@@ -32,19 +45,7 @@ const Description = styled.div`
     font-size: 20px;
   }
 `;
-const ContextBox = styled.div`
-  width: 1000px;
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
 
-  @media (max-width: 768px) {
-    width: 100vw;
-    height: 100%;
-  }
-`;
 const ItemBox = styled.div`
   width: 100%;
   height: 100%;

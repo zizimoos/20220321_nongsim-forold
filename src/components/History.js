@@ -7,13 +7,28 @@ import oldProject from "../assets/oldProject.png";
 
 const Container = styled.div`
   width: 100vw;
-  height: 100vh;
-  padding: 50px;
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: gainsboro;
+  @media (max-width: 768px) {
+    width: 100vw;
+    height: 100%;
+  }
+`;
+const ContextBox = styled.div`
+  width: 1000px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   @media (max-width: 768px) {
     width: 100vw;
     height: 100%;
@@ -25,6 +40,7 @@ const Title = styled.div`
 const Description = styled.div`
   margin-top: 30px;
   font-size: 25px;
+  margin-bottom: 50px;
   @media (max-width: 768px) {
     margin-top: 10px;
     width: 80vw;
@@ -32,18 +48,7 @@ const Description = styled.div`
     font-size: 20px;
   }
 `;
-const ContextBox = styled.div`
-  width: 1000px;
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  @media (max-width: 768px) {
-    width: 100vw;
-    height: 100%;
-  }
-`;
+
 const ItemBox = styled.div`
   width: 90%;
   height: 100%;
@@ -65,8 +70,6 @@ const Item1 = styled.div`
   border-radius: 100px;
   background-color: gray;
   background-image: url(${oldProject});
-  background-size: cover;
-  border: solid 2px lightgray;
   @media (max-width: 768px) {
     width: 150px;
     height: 150px;
@@ -125,7 +128,8 @@ const Item4 = styled.div`
 const Bar = styled.div`
   width: 90%;
   height: 3px;
-  margin-top: -200px;
+  margin-top: -150px;
+  margin-bottom: 30px;
   background-color: gray;
   @media (max-width: 768px) {
     display: none;
@@ -197,12 +201,13 @@ const HistoryDescriptionItemLi = styled.li`
 function History(props) {
   return (
     <Container>
-      <Title>History</Title>
-      <Description>
-        1994년 IT기업으로서 시작하여 IT 기술력과 멀티미디어 사업 역량을 갖춘
-        회사로 성장하여 왔으며 메타버스 사업을 본격적으로 추진하고 있습니다.
-      </Description>
       <ContextBox>
+        <Title>History</Title>
+        <Description>
+          1994년 IT기업으로서 시작하여 IT 기술력과 멀티미디어 사업 역량을 갖춘
+          회사로 성장하여 왔으며 메타버스 사업을 본격적으로 추진하고 있습니다.
+        </Description>
+
         <ItemBox>
           <Item1></Item1>
           <Item2></Item2>

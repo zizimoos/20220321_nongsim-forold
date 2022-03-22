@@ -7,13 +7,26 @@ import latelier from "../assets/latelier.png";
 
 const Container = styled.div`
   width: 100vw;
-  height: 100vh;
-  padding: 100px;
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   background-color: white;
+  @media (max-width: 768px) {
+    width: 100vw;
+    height: 100%;
+  }
+`;
+const ContextBox = styled.div`
+  width: 1000px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   @media (max-width: 768px) {
     width: 100vw;
     height: 100%;
@@ -32,18 +45,7 @@ const Description = styled.div`
     font-size: 20px;
   }
 `;
-const ContextBox = styled.div`
-  width: 1000px;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  @media (max-width: 768px) {
-    width: 100vw;
-    height: 100%;
-  }
-`;
+
 const ItemBox = styled.div`
   width: 900px;
   height: 100%;
@@ -72,22 +74,22 @@ const Item = styled.div`
 function Contents(props) {
   return (
     <Container>
-      <Title>INTRO</Title>
-      <Description>
-        <ul>
-          <li>1994년 IT기업으로서 창업 SI사업 영위</li>
-          <li>
-            2002년 멑티미디어 사업부를 신설하고 국내 최초 만화 일간지 "데일지
-            줌" 창간 및 라뜰리에(L’atelier) 프로젝트 등 IT 기술을 기반으로
-            미디어 컨텐츠 사업을 추진
-          </li>
-          <li>
-            2021년 그 동안 축적한 경험과 노하우, 새로운 맨파워 확보를 통해
-            메타버스 사업을 본격적으로 추진
-          </li>
-        </ul>
-      </Description>
       <ContextBox>
+        <Title>INTRO</Title>
+        <Description>
+          <ul>
+            <li>1994년 IT기업으로서 창업 SI사업 영위</li>
+            <li>
+              2002년 멀티미디어 사업부를 신설하고 국내 최초 만화 일간지 "데일지
+              줌" 창간 및 라뜰리에(L’atelier) 프로젝트 등 IT 기술을 기반으로
+              미디어 컨텐츠 사업을 추진
+            </li>
+            <li>
+              2021년 그 동안 축적한 경험과 노하우, 새로운 맨파워 확보를 통해
+              메타버스 사업을 본격적으로 추진
+            </li>
+          </ul>
+        </Description>
         <ItemBox>
           <Item>
             <ul>

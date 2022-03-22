@@ -4,7 +4,7 @@ import ReactPlayer from "react-player";
 
 const Container = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   padding: 100px;
   display: flex;
   flex-direction: column;
@@ -16,7 +16,18 @@ const Container = styled.div`
     height: 100%;
   }
 `;
-
+const ContextBox = styled.div`
+  width: 1000px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  @media (max-width: 768px) {
+    width: 100vw;
+    height: 100%;
+  }
+`;
 const Title = styled.div`
   font-size: 80px;
   @media (max-width: 768px) {
@@ -27,6 +38,7 @@ const Title = styled.div`
 const Description = styled.div`
   margin-top: 30px;
   font-size: 25px;
+  margin-bottom: 50px;
   @media (max-width: 768px) {
     margin-top: 10px;
     width: 80vw;
@@ -35,22 +47,11 @@ const Description = styled.div`
   }
 `;
 
-const ContextBox = styled.div`
-  width: 1000px;
-  height: 800px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  @media (max-width: 768px) {
-    width: 100vw;
-    height: 100%;
-  }
-`;
 const ItemBox = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   @media (max-width: 768px) {
@@ -64,8 +65,8 @@ const ItemBox = styled.div`
 `;
 const Item = styled.div`
   width: 500px;
-  height: 500px;
-  margin: 10px;
+  height: 100%;
+  margin-bottom: 50px;
   li {
     margin-bottom: 10px;
   }
@@ -90,12 +91,14 @@ const ItemVisual = styled.div`
 function Technology1(props) {
   return (
     <Container>
-      <Title>Technology 1.</Title>
-      <Description>
-        라뜰리에 등 프로젝트를 통해서 AI LEARNING INTERACTIVE, MULTI-CHANNEL
-        SYNCRO, HOLOGRAPHIC & CHROMA KEY 등 핵심 TECHNOLOGY를 보유하고 있습니다.
-      </Description>
       <ContextBox>
+        <Title>Technology 1.</Title>
+        <Description>
+          라뜰리에 등 프로젝트를 통해서 AI LEARNING INTERACTIVE, MULTI-CHANNEL
+          SYNCRO, HOLOGRAPHIC & CHROMA KEY 등 핵심 TECHNOLOGY를 보유하고
+          있습니다.
+        </Description>
+
         <ItemBox>
           <Item>
             <ul>

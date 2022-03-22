@@ -4,13 +4,26 @@ import ReactPlayer from "react-player";
 
 const Container = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   padding: 100px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   background-color: lightgray;
+`;
+const ContextBox = styled.div`
+  width: 1000px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    width: 100vw;
+    height: 100%;
+  }
 `;
 const Title = styled.div`
   font-size: 80px;
@@ -23,20 +36,6 @@ const Description = styled.div`
     width: 80vw;
     height: 100%;
     font-size: 20px;
-  }
-`;
-
-const ContextBox = styled.div`
-  width: 1000px;
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-
-  @media (max-width: 768px) {
-    width: 100vw;
-    height: 100%;
   }
 `;
 
@@ -67,13 +66,14 @@ const Item = styled.div`
 function Portfolio2(props) {
   return (
     <Container>
-      <Title>Portfolio 2.</Title>
-      <Description>
-        신개념 아트랙티브(ARTACTIVE) 테마파크 L’ATELIEUR는 사진찍기 좋은 장소로
-        SNS에서 인기몰이를 하였으며, 입장객 55만명 매출액 92억 원을 기록하여
-        대표적인 성공사례로 손꼽히고 있습니다.
-      </Description>
       <ContextBox>
+        <Title>Portfolio 2.</Title>
+        <Description>
+          신개념 아트랙티브(ARTACTIVE) 테마파크 L’ATELIEUR는 사진찍기 좋은
+          장소로 SNS에서 인기몰이를 하였으며, 입장객 55만명 매출액 92억 원을
+          기록하여 대표적인 성공사례로 손꼽히고 있습니다.
+        </Description>
+
         <ItemBox>
           <Item>
             <ReactPlayer url="https://youtu.be/uB3mOZJPns0" />

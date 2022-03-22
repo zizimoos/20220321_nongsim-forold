@@ -3,10 +3,26 @@ import styled from "styled-components";
 import henry from "../assets/henry.jpeg";
 import shwan from "../assets/shwan.png";
 import kksoo from "../assets/kksoo.png";
+
 const Container = styled.div`
   width: 100vw;
-  height: 100vh;
-  padding: 100px;
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  @media (max-width: 768px) {
+    width: 100vw;
+    height: 100%;
+  }
+`;
+const ContextBox = styled.div`
+  width: 1000px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -20,19 +36,7 @@ const Container = styled.div`
 const Title = styled.div`
   font-size: 80px;
 `;
-const ContextBox = styled.div`
-  width: 1000px;
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: white;
-  @media (max-width: 768px) {
-    width: 100vw;
-    height: 100%;
-  }
-`;
+
 const ItemBox = styled.div`
   width: 100%;
   height: 100%;
@@ -85,8 +89,8 @@ const ItemDescription = styled.div`
 function Teams(props) {
   return (
     <Container>
-      <Title>meet Our Team</Title>
       <ContextBox>
+        <Title>meet Our Team</Title>
         <ItemBox>
           <div>
             <Item1></Item1>
