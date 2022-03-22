@@ -35,7 +35,7 @@ function App() {
       <History></History>
       <Teams></Teams>
       <Technology1></Technology1>
-      <Technology2></Technology2>
+      {/* <Technology2></Technology2> */}
       <Portfolio1></Portfolio1>
       <Portfolio2></Portfolio2>
       <Portfolio3></Portfolio3>
