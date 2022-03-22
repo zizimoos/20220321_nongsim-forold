@@ -38,10 +38,10 @@ function App() {
       {/* <Technology2></Technology2> */}
       <Portfolio1></Portfolio1>
       <Portfolio2></Portfolio2>
-      <Portfolio3></Portfolio3>
+      {/* <Portfolio3></Portfolio3>
       <Portfolio4></Portfolio4>
       <Portfolio5></Portfolio5>
-      <Portfolio6></Portfolio6>
+      <Portfolio6></Portfolio6> */}
       <NewProject1></NewProject1>
       <NewProject2></NewProject2>
       <NewProject3></NewProject3>

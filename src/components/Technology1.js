@@ -56,6 +56,7 @@ const ItemBox = styled.div`
   justify-content: center;
   align-items: center;
   @media (max-width: 768px) {
+    width: 100vw;
     flex-direction: column;
   }
 `;
@@ -63,7 +64,6 @@ const Item = styled.div`
   width: 500px;
   height: 500px;
   margin: 10px;
-
   li {
     margin-bottom: 10px;
   }
@@ -77,8 +77,9 @@ const ItemVisual = styled.div`
   margin: 10px;
   @media (max-width: 768px) {
     width: 100vw;
+    height: 100%;
     ReactPlayer {
-      width: 350px;
+      width: 100vw;
     }
   }
 `;
@@ -86,7 +87,7 @@ const ItemVisual = styled.div`
 function Technology1(props) {
   return (
     <Container>
-      <Title>Technology1</Title>
+      <Title>Technology 1.</Title>
       <Description>
         라뜰리에 등 프로젝트를 통해서 AI LEARNING INTERACTIVE, MULTI-CHANNEL
         SYNCRO, HOLOGRAPHIC & CHROMA KEY 등 핵심 TECHNOLOGY를 보유하고 있습니다.
