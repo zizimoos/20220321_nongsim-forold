@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +14,6 @@ const Wrapper = styled.div`
     width: 100vw;
   }
 `;
-
 const MetaLogoSvg = styled.svg`
   width: 500px;
   height: 500px;
@@ -28,8 +27,8 @@ const LogoDescripSvg = styled.svg`
   width: 400px;
   height: 500px;
   @media (max-width: 768px) {
-    margin-top: -500px;
     width: 70vw;
+    margin-top: -500px;
   }
 `;
 
