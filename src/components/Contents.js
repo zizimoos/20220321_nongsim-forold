@@ -19,13 +19,12 @@ const Container = styled.div`
     height: 100%;
   }
 `;
-
 const Title = styled.div`
   font-size: 50px;
 `;
 const Description = styled.div`
   margin-top: 30px;
-  font-size: 30px;
+  font-size: 25px;
   @media (max-width: 768px) {
     margin-top: 10px;
     width: 80vw;
@@ -62,6 +61,7 @@ const Item = styled.div`
   margin: 10px;
   li {
     padding-right: 10px;
+    margin-left: -15px;
   }
   @media (max-width: 768px) {
     width: 350px;
@@ -95,14 +95,16 @@ function Contents(props) {
               <li>게임엔진개발 / 플랫폼 구축</li>
               <li>퍼블리싱 / 운영</li>
               <br></br>
+              <br></br>
             </ul>
             <img src={araImage} alt="ara" width="100%" />
           </Item>
           <Item>
             <ul>
               <li>블록체인 & 암호화폐</li>
-              <li>암호화폐거래소 개발 및 운영</li>
+              <li>암호화폐거래소 개발 운영</li>
               <li>메타버스플랫폼 토큰 발행 운영</li>
+              <br></br>
             </ul>
             <img src={blockchain} alt="blockchain" width="100%" />
           </Item>

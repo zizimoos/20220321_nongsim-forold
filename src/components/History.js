@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import latelier from "../assets/latelier.png";
+import zoom from "../assets/zoom.jpg";
+import bible from "../assets/bible.jpg";
 
 const Container = styled.div`
   width: 100vw;
@@ -15,14 +18,12 @@ const Container = styled.div`
     height: 100%;
   }
 `;
-
 const Title = styled.div`
   font-size: 80px;
 `;
-
 const Description = styled.div`
   margin-top: 30px;
-  font-size: 30px;
+  font-size: 25px;
   @media (max-width: 768px) {
     margin-top: 10px;
     width: 80vw;
@@ -42,7 +43,6 @@ const ContextBox = styled.div`
     height: 100%;
   }
 `;
-
 const ItemBox = styled.div`
   width: 90%;
   height: 100%;
@@ -57,7 +57,7 @@ const ItemBox = styled.div`
     flex-direction: column;
   }
 `;
-const Item = styled.div`
+const Item1 = styled.div`
   width: 200px;
   height: 200px;
   margin: 10px;
@@ -70,7 +70,54 @@ const Item = styled.div`
     flex-direction: column;
   }
 `;
-
+const Item2 = styled.div`
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 100px;
+  background-color: gray;
+  background-image: url(${zoom});
+  background-size: cover;
+  border: solid 2px lightgray;
+  @media (max-width: 768px) {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    flex-direction: column;
+  }
+`;
+const Item3 = styled.div`
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 100px;
+  background-color: gray;
+  background-image: url(${latelier});
+  background-size: cover;
+  border: solid 2px lightgray;
+  @media (max-width: 768px) {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    flex-direction: column;
+  }
+`;
+const Item4 = styled.div`
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 100px;
+  background-color: gray;
+  background-image: url(${bible});
+  background-size: cover;
+  border: solid 2px lightgray;
+  @media (max-width: 768px) {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    flex-direction: column;
+  }
+`;
 const Bar = styled.div`
   width: 80%;
   height: 5px;
@@ -92,13 +139,11 @@ const HistoryDescriptionBox = styled.div`
     flex-direction: column;
   }
 `;
-
 const HistoryDescriptionItem = styled.div`
   width: 250px;
   height: 300px;
   margin-bottom: 50px;
 `;
-
 const HistoryDescriptionItemUl = styled.ul``;
 const HistoryDescriptionItemLi = styled.li`
   padding: 3px;
@@ -109,15 +154,15 @@ function History(props) {
     <Container>
       <Title>History</Title>
       <Description>
-        1994년 IT 기업으로 시작하여 기술력과 사업력을 갖춘 회사로 성장하여
-        왔습니다.
+        1994년 IT기업으로서 시작하여 IT 기술력과 멀티미디어 사업 역량을 갖춘
+        회사로 성장하여 왔으며 메타버스 사업을 본격적으로 추진하고 있습니다.
       </Description>
       <ContextBox>
         <ItemBox>
-          <Item></Item>
-          <Item></Item>
-          <Item></Item>
-          <Item></Item>
+          <Item1></Item1>
+          <Item2></Item2>
+          <Item3></Item3>
+          <Item4></Item4>
         </ItemBox>
         <Bar></Bar>
         <HistoryDescriptionBox>
@@ -127,7 +172,7 @@ function History(props) {
                 1994 : 법인 설립
               </HistoryDescriptionItemLi>
               <HistoryDescriptionItemLi>
-                1995 : 한국전자통신연구원 [한국어 음서합성 기술]
+                1995 : 한국전자통신연구원 [한국어 음성합성 기술]
               </HistoryDescriptionItemLi>
               <HistoryDescriptionItemLi>
                 1996 : 대한상공회의소 인트라넷 구축
@@ -168,7 +213,13 @@ function History(props) {
                 2020 : 중국 중한 산업원 MOU (인터렉티브 스포츠 파크)
               </HistoryDescriptionItemLi>
               <HistoryDescriptionItemLi>
-                2022 : 메타버스 더 바이블 프로젝트 준비 중
+                2021 : 메타버스 사업 법인 설립 주)메타스텝
+              </HistoryDescriptionItemLi>
+              <HistoryDescriptionItemLi>
+                2022 : 메타스텝 더 바이블 프로젝트
+              </HistoryDescriptionItemLi>
+              <HistoryDescriptionItemLi>
+                2022 : 메타스텝 가상오피스 플랫폼 구축
               </HistoryDescriptionItemLi>
             </ul>
           </HistoryDescriptionItem>
