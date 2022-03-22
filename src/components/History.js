@@ -3,6 +3,7 @@ import styled from "styled-components";
 import latelier from "../assets/latelier.png";
 import zoom from "../assets/zoom.jpg";
 import bible from "../assets/bible.jpg";
+import oldProject from "../assets/oldProject.png";
 
 const Container = styled.div`
   width: 100vw;
@@ -63,6 +64,9 @@ const Item1 = styled.div`
   margin: 10px;
   border-radius: 100px;
   background-color: gray;
+  background-image: url(${oldProject});
+  background-size: cover;
+  border: solid 2px lightgray;
   @media (max-width: 768px) {
     width: 150px;
     height: 150px;
@@ -119,13 +123,54 @@ const Item4 = styled.div`
   }
 `;
 const Bar = styled.div`
-  width: 80%;
-  height: 5px;
+  width: 90%;
+  height: 3px;
   margin-top: -200px;
   background-color: gray;
   @media (max-width: 768px) {
     display: none;
   }
+`;
+const Spot1 = styled.div`
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: -3px;
+  left: 80px;
+  border-radius: 5px;
+  border: solid 1px white;
+  background-color: red;
+  z-index: 2;
+`;
+const Spot2 = styled.div`
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: -12px;
+  left: 400px;
+  border-radius: 5px;
+  border: solid 1px white;
+  background-color: red;
+  z-index: 1;
+`;
+const Spot3 = styled.div`
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: -22px;
+  left: 720px;
+  border-radius: 5px;
+  border: solid 1px white;
+  background-color: red;
+  z-index: 1;
+`;
+const VerticalBar = styled.div`
+  width: 2px;
+  height: 40px;
+  position: relative;
+  top: 8px;
+  left: 3px;
+  background-color: gray;
 `;
 const HistoryDescriptionBox = styled.div`
   width: 90%;
@@ -164,7 +209,17 @@ function History(props) {
           <Item3></Item3>
           <Item4></Item4>
         </ItemBox>
-        <Bar></Bar>
+        <Bar>
+          <Spot1>
+            <VerticalBar></VerticalBar>
+          </Spot1>
+          <Spot2>
+            <VerticalBar></VerticalBar>
+          </Spot2>
+          <Spot3>
+            <VerticalBar></VerticalBar>
+          </Spot3>
+        </Bar>
         <HistoryDescriptionBox>
           <HistoryDescriptionItem>
             <HistoryDescriptionItemUl>

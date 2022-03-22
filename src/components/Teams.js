@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import henry from "../assets/henry.jpeg";
-
+import shwan from "../assets/shwan.png";
+import kksoo from "../assets/kksoo.png";
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
@@ -16,7 +17,6 @@ const Container = styled.div`
     height: 100%;
   }
 `;
-
 const Title = styled.div`
   font-size: 80px;
 `;
@@ -50,7 +50,8 @@ const Item1 = styled.div`
   margin: 30px;
   border-radius: 100px;
   background-color: gray;
-
+  background-image: url(${shwan});
+  background-size: cover;
   border: solid 2px lightgray;
 `;
 const Item2 = styled.div`
@@ -68,7 +69,8 @@ const Item3 = styled.div`
   margin: 30px;
   border-radius: 100px;
   background-color: gray;
-
+  background-image: url(${kksoo});
+  background-size: cover;
   border: solid 2px lightgray;
 `;
 const ItemDescription = styled.div`
