@@ -24,6 +24,7 @@ const Title = styled.div`
 const Description = styled.div`
   margin-top: 30px;
   font-size: 25px;
+  margin-bottom: 30px;
   @media (max-width: 768px) {
     margin-top: 10px;
     width: 80vw;
@@ -31,7 +32,6 @@ const Description = styled.div`
     font-size: 20px;
   }
 `;
-
 const ContextBox = styled.div`
   width: 1000px;
   height: 800px;
