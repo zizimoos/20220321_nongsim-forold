@@ -11,6 +11,10 @@ const Container = styled.div`
   justify-content: flex-start;
   align-items: center;
   background-color: oldlace;
+  @media (max-width: 768px) {
+    width: 100vw;
+    height: 100%;
+  }
 `;
 const Title = styled.div`
   font-size: 80px;

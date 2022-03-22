@@ -75,9 +75,12 @@ const Item = styled.div`
   }
 `;
 const ItemVisual = styled.div`
-  width: 500px;
-  height: 500px;
+  width: 800px;
+  height: 600px;
   margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media (max-width: 768px) {
     width: 100vw;
     height: 100%;

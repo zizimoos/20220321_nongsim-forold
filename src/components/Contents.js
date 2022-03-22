@@ -94,7 +94,7 @@ function Contents(props) {
           <Item>
             <ul>
               <li>게임개발 & 운영 노하우</li>
-              <li>게임엔진개발 / 플랫폼 구축</li>
+              <li>게임엔진개발 / 플랫폼구축</li>
               <li>퍼블리싱 / 운영</li>
               <br></br>
               <br></br>

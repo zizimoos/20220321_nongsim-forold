@@ -113,7 +113,7 @@ function Teams(props) {
               <ul>
                 <li>동대문 라뜰리에 프로젝트 총괄</li>
                 <li>(주) 맥키스컴퍼니 기술연구소장</li>
-                <li>씨앤애드 전시실정</li>
+                <li>씨앤애드 전시실장</li>
                 <li>홍익대학교 미대 석사</li>
               </ul>
             </ItemDescription>
