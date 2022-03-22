@@ -39,10 +39,8 @@ const ContextBox = styled.div`
   width: 1000px;
   height: 800px;
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
   @media (max-width: 768px) {
     width: 100vw;
     height: 100%;
@@ -57,7 +55,11 @@ const ItemBox = styled.div`
   align-items: center;
   @media (max-width: 768px) {
     width: 100vw;
+    height: 100%;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;
 const Item = styled.div`
@@ -69,6 +71,7 @@ const Item = styled.div`
   }
   @media (max-width: 768px) {
     width: 100vw;
+    height: 100%;
   }
 `;
 const ItemVisual = styled.div`
@@ -109,7 +112,7 @@ function Technology1(props) {
             </ul>
           </Item>
           <ItemVisual>
-            <ReactPlayer url="https://youtu.be/6_N-_bfeTXE" width="500px" />
+            <ReactPlayer url="https://youtu.be/6_N-_bfeTXE" />
           </ItemVisual>
         </ItemBox>
       </ContextBox>
