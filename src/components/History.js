@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  padding: 100px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -31,15 +31,22 @@ const Description = styled.div`
   }
 `;
 const ContextBox = styled.div`
+  width: 1000px;
+  height: 800px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  @media (max-width: 768px) {
+    width: 100vw;
+    height: 100%;
+  }
 `;
 
 const ItemBox = styled.div`
-  width: 90vw;
+  width: 90%;
   height: 100%;
+  margin-bottom: 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -51,9 +58,9 @@ const ItemBox = styled.div`
   }
 `;
 const Item = styled.div`
-  width: 150px;
-  height: 150px;
-  margin: 30px;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
   border-radius: 100px;
   background-color: gray;
   @media (max-width: 768px) {
@@ -65,30 +72,36 @@ const Item = styled.div`
 `;
 
 const Bar = styled.div`
-  width: 70vw;
+  width: 80%;
   height: 5px;
-
+  margin-top: -200px;
   background-color: gray;
   @media (max-width: 768px) {
     display: none;
   }
 `;
 const HistoryDescriptionBox = styled.div`
-  width: 80vw;
+  width: 90%;
+  height: 100%;
   margin-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   @media (max-width: 768px) {
-    flex-direction: row;
+    flex-direction: column;
   }
 `;
 
 const HistoryDescriptionItem = styled.div`
   width: 250px;
-  height: 250px;
-  background-color: gray;
+  height: 300px;
+  margin-bottom: 50px;
+`;
+
+const HistoryDescriptionItemUl = styled.ul``;
+const HistoryDescriptionItemLi = styled.li`
+  padding: 3px;
 `;
 
 function History(props) {
@@ -108,9 +121,57 @@ function History(props) {
         </ItemBox>
         <Bar></Bar>
         <HistoryDescriptionBox>
-          <HistoryDescriptionItem></HistoryDescriptionItem>
-          <HistoryDescriptionItem></HistoryDescriptionItem>
-          <HistoryDescriptionItem></HistoryDescriptionItem>
+          <HistoryDescriptionItem>
+            <HistoryDescriptionItemUl>
+              <HistoryDescriptionItemLi>
+                1994 : 법인 설립
+              </HistoryDescriptionItemLi>
+              <HistoryDescriptionItemLi>
+                1995 : 한국전자통신연구원 [한국어 음서합성 기술]
+              </HistoryDescriptionItemLi>
+              <HistoryDescriptionItemLi>
+                1996 : 대한상공회의소 인트라넷 구축
+              </HistoryDescriptionItemLi>
+              <HistoryDescriptionItemLi>
+                1997 : 한국전자통신 연구원 [3차원을 이용한 가상대학]
+              </HistoryDescriptionItemLi>
+            </HistoryDescriptionItemUl>
+          </HistoryDescriptionItem>
+          <HistoryDescriptionItem>
+            <ul>
+              <HistoryDescriptionItemLi>
+                2001 : 미국 CES 참가 [세계최초 CHARACTOLOGY 서비스]
+              </HistoryDescriptionItemLi>
+              <HistoryDescriptionItemLi>
+                2002 : 멀티미디어 사업부 신설
+              </HistoryDescriptionItemLi>
+              <HistoryDescriptionItemLi>
+                2003 : 'X-File 안중근 전 (울산전쟁기념관)
+              </HistoryDescriptionItemLi>
+              <HistoryDescriptionItemLi>
+                2004 : 최초 만화일간지(데일리줌) 창간
+              </HistoryDescriptionItemLi>
+              <HistoryDescriptionItemLi>
+                2008 : 살아있는 미술관 (잠실종합운동장)
+              </HistoryDescriptionItemLi>
+            </ul>
+          </HistoryDescriptionItem>
+          <HistoryDescriptionItem>
+            <ul>
+              <HistoryDescriptionItemLi>
+                2017 : 라뜰리에(L'ATELIER)전시회 총괄 기획
+              </HistoryDescriptionItemLi>
+              <HistoryDescriptionItemLi>
+                2019 : 라뜰리에 베이징 (L'ATELIER BEIJING WF CENTRAL)
+              </HistoryDescriptionItemLi>
+              <HistoryDescriptionItemLi>
+                2020 : 중국 중한 산업원 MOU (인터렉티브 스포츠 파크)
+              </HistoryDescriptionItemLi>
+              <HistoryDescriptionItemLi>
+                2022 : 메타버스 더 바이블 프로젝트 준비 중
+              </HistoryDescriptionItemLi>
+            </ul>
+          </HistoryDescriptionItem>
         </HistoryDescriptionBox>
       </ContextBox>
     </Container>
