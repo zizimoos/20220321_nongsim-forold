@@ -122,7 +122,7 @@ function Contents(props) {
               <li>콘텐츠 기획력</li>
               <li>아라온라인, 마법삼국지</li>
               <li>테디베어, 라뜰리에</li>
-              <li>게임 및 테마파크 콘텐츠</li>
+              <li>게임 테마파크 콘텐츠</li>
             </ul>
             <img src={latelier} alt="latelier" width="100%" />
           </Item>
