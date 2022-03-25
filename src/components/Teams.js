@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import henry from "../assets/henry.jpeg";
+import henry from "../assets/henryPhoto.png";
 import shwan from "../assets/shwan.png";
 import kksoo from "../assets/kksoo.png";
 
